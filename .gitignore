@@ -1,0 +1,9 @@
+.DS_Store
+# macOS
+.DS_Store
+# Editor directories
+.vscode/
+# Node
+node_modules/
+# Ignore nested empty repo clone
+Nilavannan.Love/

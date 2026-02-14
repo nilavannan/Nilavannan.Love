@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Love ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</head>
+
+<body class="love-bg">
+
+    <div class="love-card fade">
+
+        <h1>Yay! You said YES 🎉</h1>
+
+        <p>
+
+            My dear Laxciya,<br><br>
+            
+            <p class="para">
+                Distance may lie between Colombo and Trinco, yet my heart walks only toward you.
+            Three years of love, and still you feel like my sweetest beginning.
+            You changed my world quietly, turning ordinary days into forever memories.
+            Though we meet rarely, my soul carries you every moment and I miss you endlessly.
+            You are my always, my special love, today and forever.
+            </p>
+            
+
+            <br><br>
+            <b>Forever yours,<br>Nilavannan</b>
+
+
+        </p>
+
+    </div>
+    <script>
+
+window.onload = function(){
+
+    // BIG CONFETTI EXPLOSION 🎉
+    confetti({
+        particleCount:200,
+        spread:120,
+        origin:{ y:0.6 }
+    });
+
+    // extra bursts like video
+    setTimeout(()=>confetti({particleCount:150, spread:90}),300);
+    setTimeout(()=>confetti({particleCount:150, spread:160}),600);
+
+}
+
+</script>
+
+</body>
+
+</html>
