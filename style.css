@@ -1,12 +1,12 @@
 body{
 margin:0;
 font-family: Arial;
-height:100vh;
+min-height:100vh;   /* change height → min-height */
 display:flex;
 justify-content:center;
 align-items:center;
-overflow:hidden;
 }
+
 
 .para{
     color: black;
@@ -20,12 +20,16 @@ background: linear-gradient(135deg,#ff9acb,#9ecbff);
 /* LOVE PAGE BACKGROUND IMAGE + GRADIENT */
 .love-bg{
 background:
-linear-gradient(rgba(255,150,200,0.3), rgba(150,200,255,0.3)),
+linear-gradient(rgba(255,150,200,0.2), rgba(150,200,255,0.2)),
 url("bg.jpeg");
 
 background-size: cover;
 background-position: center;
+background-repeat: no-repeat;
+
+min-height:100vh;
 }
+
 
 
 /* CARDS */
@@ -33,8 +37,9 @@ background-position: center;
 
 background: rgba(255,255,255,0.15); /* more transparent */
 
-backdrop-filter: blur(0.5px); /* less blur */
--webkit-backdrop-filter: blur(6px);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+
 
 padding:40px;
 border-radius:25px;
@@ -93,12 +98,7 @@ animation: fadeIn 1s ease;
 from{opacity:0; transform:scale(0.9);}
 to{opacity:1; transform:scale(1);}
 }
-@media(max-width:600px){
 
-.love-card{
-padding:25px;
-backdrop-filter: blur(0.5px); /* even less blur on phone */
-}
 
-}
+
 
