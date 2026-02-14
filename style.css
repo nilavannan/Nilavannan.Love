@@ -33,7 +33,7 @@ background-position: center;
 
 background: rgba(255,255,255,0.15); /* more transparent */
 
-backdrop-filter: blur(1px); /* less blur */
+backdrop-filter: blur(0.5px); /* less blur */
 -webkit-backdrop-filter: blur(6px);
 
 padding:40px;
@@ -97,7 +97,7 @@ to{opacity:1; transform:scale(1);}
 
 .love-card{
 padding:25px;
-backdrop-filter: blur(1px); /* even less blur on phone */
+backdrop-filter: blur(0.5px); /* even less blur on phone */
 }
 
 }
