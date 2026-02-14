@@ -19,19 +19,22 @@ background: linear-gradient(135deg,#ff9acb,#9ecbff);
 
 /* LOVE PAGE BACKGROUND IMAGE + GRADIENT */
 .love-bg{
-background-image: url("bg2.jpeg");
+background:
+linear-gradient(rgba(255,150,200,0.3), rgba(150,200,255,0.3)),
+url("bg.jpeg");
+
 background-size: cover;
 background-position: center;
-background-repeat: no-repeat;
 }
+
 
 /* CARDS */
 .card, .love-card{
 
-background: rgba(255,255,255,0.2); /* transparent white */
+background: rgba(255,255,255,0.15); /* more transparent */
 
-backdrop-filter: blur(0.5px); /* blur background behind */
--webkit-backdrop-filter: blur(15px); /* for Safari */
+backdrop-filter: blur(6px); /* less blur */
+-webkit-backdrop-filter: blur(6px);
 
 padding:40px;
 border-radius:25px;
@@ -39,10 +42,11 @@ border-radius:25px;
 box-shadow:0 10px 40px rgba(0,0,0,0.2);
 
 text-align:center;
-max-width:300px;
+max-width:600px;
 
-border:1px solid rgba(255,255,255,0.3); /* glass edge */
+border:1px solid rgba(255,255,255,0.3);
 }
+
 
 
 /* BUTTONS */
@@ -89,3 +93,12 @@ animation: fadeIn 1s ease;
 from{opacity:0; transform:scale(0.9);}
 to{opacity:1; transform:scale(1);}
 }
+@media(max-width:600px){
+
+.love-card{
+padding:25px;
+backdrop-filter: blur(4px); /* even less blur on phone */
+}
+
+}
+
